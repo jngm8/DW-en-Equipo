@@ -1,6 +1,6 @@
 import { Series } from './series.js';
 
-export const dataseries = [
+export const dataSeries = [
     new Series (1,"Breaking Bad","AMC", 5) ,
     
     new Series (2,"Orange Is the New Black", "Netflix", 6),
