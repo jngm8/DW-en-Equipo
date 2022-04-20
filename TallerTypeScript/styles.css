@@ -7,3 +7,20 @@ h2{
     padding: 15px;
    
   }
+
+.photo
+{
+    width:40px;
+    height:38px;
+    float:left;
+}
+
+table {
+    table-layout: left;
+    width: 100%;
+    border-collapse: collapse;
+
+  }
+
+ 
+ 
