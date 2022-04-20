@@ -21,6 +21,11 @@ table {
     border-collapse: collapse;
 
   }
+  tbody{
+    background-color:rgb(230, 224, 224);
+  }
 
  
- 
+ thead Name{
+
+ }

@@ -26,7 +26,7 @@ function renderCoursesInTable(series: Series[]): void {
 
 function getSeasonsAverage(series: Series[]): number {
   let seasonsAverage: number = 0;
-  series.forEach((serie) => seasonsAverage = seasonsAverage + serie.seasons/serie.id);
+  series.forEach((serie) => seasonsAverage = seasonsAverage + serie.seasons/series.length);
   return seasonsAverage;
 }
 
