@@ -4,7 +4,7 @@ import { dataSerie } from './dataSeries.js';
 
 
 let seriesTbody: HTMLElement = document.getElementById('series')!;
-const seasonsAvg: HTMLElement = document.getElementById("total-credits")!;
+const seasonsAvg: HTMLElement = document.getElementById("seasonAverage")!;
 
 renderCoursesInTable(dataSerie);
 
@@ -26,7 +26,7 @@ function renderCoursesInTable(series: Series[]): void {
 
 function getSeasonsAverage(series: Series[]): number {
   let seasonsAverage: number = 0;
-  series.forEach((serie) => seasonsAverage = seasonsAverage + serie.seasons/series.length);
-  return seasonsAverage;
+  series.forEach((serie) => seasonsAverage += serie.seasons);
+  return (seasonsAverage/series.length);
 }
 

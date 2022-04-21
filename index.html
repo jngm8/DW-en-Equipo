@@ -10,15 +10,16 @@
 <link rel="stylesheet" href="styles.css">
 <body>
     <div>
-        <img class ="photo" src="./foto.jpg" height="200px" width="200px" alt="Avatar">
+        <img class ="photo" src="./foto.jpg" height="200px" width="200px" alt="Tv">
         <h2>Tv Series</h2>
     </div>
-    <div class="col">
-        <div class="card">
-            <form style="margin:10px;">
-                <div class="form-row">
+    <div class="container">
+        <div class="col">
+            <div class="card">
+                <div style="text-align:left;">
                     <table class="table">
-                        <thead class="thead">
+                        <caption>Season average: <a id="seasonAverage"></a></caption>
+                        <thead>
                             <tr>
                                 <th>#</th>
                                 <th>Name</th>
@@ -26,11 +27,13 @@
                                 <th>Seasons</th>
                             </tr>
                         </thead>
-                    <tbody id="series">
-                    </tbody>
+                        <tbody id="series">
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
+    </div>
         
     </form>
     <script type="module" src="./scripts/series.js" ></script>
