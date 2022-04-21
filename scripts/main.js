@@ -1,6 +1,6 @@
 import { dataSerie } from './dataSeries.js';
 var seriesTbody = document.getElementById('series');
-var seasonsAvg = document.getElementById("total-credits");
+var seasonsAvg = document.getElementById("seasonAverage");
 renderCoursesInTable(dataSerie);
 seasonsAvg.innerHTML = "".concat(getSeasonsAverage(dataSerie));
 function renderCoursesInTable(series) {
@@ -13,6 +13,6 @@ function renderCoursesInTable(series) {
 }
 function getSeasonsAverage(series) {
     var seasonsAverage = 0;
-    series.forEach(function (serie) { return seasonsAverage = seasonsAverage + serie.seasons / serie.id; });
-    return seasonsAverage;
+    series.forEach(function (serie) { return seasonsAverage = seasonsAverage + serie.seasons; });
+    return (seasonsAverage / series.length);
 }

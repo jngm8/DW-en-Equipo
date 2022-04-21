@@ -15,9 +15,9 @@ h2{
     float:left;
 }
 
-table {
+.table {
     table-layout: left;
-    width: 10%;
+    width: 100%;
     border-collapse: collapse;
 
   }
@@ -26,4 +26,11 @@ table {
     WIDTH:"10"; 
 	  HEIGHT:"10";
   }
+
+.letra{
+  color:rgb(15, 29, 29);
+}
+ caption{
+   color:black;
+ }
 

@@ -14,11 +14,11 @@
         <h2>Tv Series</h2>
     </div>
     <div class="container">
-        <div class="col">
-            <div class="card">
+        <div class="row">
+            <div class="col-sm-12 col-lg-6">
                 <div style="text-align:left;">
                     <table class="table">
-                        <caption>Season average: <a id="seasonAverage"></a></caption>
+                        <caption>Seasons average: <a id="seasonAverage"></a></caption>
                         <thead>
                             <tr>
                                 <th>#</th>
@@ -27,15 +27,23 @@
                                 <th>Seasons</th>
                             </tr>
                         </thead>
-                        <tbody id="series">
+                        <tbody id="series" class="letra">
                         </tbody>
                     </table>
+
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <img class ="photo" src="./foto.jpg" height="200px" width="200px" alt="Tv">
+
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-        
-    </form>
+   
     <script type="module" src="./scripts/series.js" ></script>
     <script type="module" src="./scripts/dataSeries.js" ></script>
     <script type="module" src="./scripts/main.js"></script>
