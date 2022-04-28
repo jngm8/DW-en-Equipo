@@ -39,7 +39,6 @@ if (infoSerie.firstChild != null){
 function showInfo(serie:Series) 
 { 
   console.log(serie);
-  
   let cardElement = document.createElement("div");
     cardElement.setAttribute("id", "description");
     cardElement.setAttribute("class","card");
