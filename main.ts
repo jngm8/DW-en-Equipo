@@ -38,16 +38,18 @@ if (infoSerie.firstChild != null){
 
 function showInfo(serie:Series) 
 { 
-  clearSeriesInTable();
+  console.log(serie);
+  
   let cardElement = document.createElement("div");
+    cardElement.setAttribute("id", "description");
     cardElement.setAttribute("class","card");
     cardElement.setAttribute("style","width: 18rem;");
-    cardElement.innerHTML =    <img src="${serie.img}" class="card-img-top" alt="imagen">
+    cardElement.innerHTML = `<img src="${serie.imagen}" class="card-img-top" alt="imagen">
                                 <div class="card-body">
                                 <h5>${serie.name}</h5>
                                 <p class="card-text">${serie.description}</p>
-                                <a href="url">${serie.link}</a>
-                                </div>;
+                                <a href="url">${serie.fuente}</a>
+                                </div>;`
     infoSerie.appendChild(cardElement);
 }
 
